@@ -22,13 +22,13 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Wade",
+                1000,
+                "Backend Developer",
                 1000,
                 "Web Developer",
                 1000,
                 "Mobile Developer",
-                1000,
-                "UI/UX Designer",
                 1000,
               ]}
               wrapper="span"
@@ -37,8 +37,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
+            How can I help you with your next project?
           </p>
           <div>
             <Link
@@ -48,7 +47,7 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <Link
-              href="/"
+              href="https://docs.google.com/document/d/1PV3TPmcFehx7RRvO6Gh0fY7k-R0IdZCqSPsiHGNmlcs/edit?usp=sharing"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
@@ -65,11 +64,11 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/profile_photo.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
             />
           </div>
         </motion.div>
