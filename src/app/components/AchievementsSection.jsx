@@ -22,7 +22,7 @@ const achievementsList = [
   },
   {
     metric: "Awards",
-    value: "3",
+    value: "metaverse",
   },
   {
     metric: "Years",

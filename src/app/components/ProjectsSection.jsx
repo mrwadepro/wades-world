@@ -4,62 +4,62 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-const projectsData = [
+export const projectsData = [
   {
     id: 1,
     title: "Stemuli 1.0",
-    description: "Full stack application built with MERN Stack. ",
-    image: "/images/projects/1.png",
+    description: "Developed an online platform to help companies and organizations mentor students remotely, addressing the challenge of limited mentor availability due to full-time jobs. The platform allowed mentors to post videos and engage with students building workforce skills. It later evolved into a full learning management system (LMS) with progress tracking, attendance reporting, and a built-in virtual classroom for schools.",
+    image: "/images/projects/stemuli_1.0/dashboard_volunteer.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/stemuli_1.0",
   },
   {
     id: 2,
     title: "EdOS ",
     description:
-      "Full stack application built with MERN Stack, PlayFab, and Unity. ",
-    image: "/images/projects/2.png",
+      "Built a hybrid web and Unity-based LMS that lets teachers create and manage curriculum, import classes from Google Classroom, and deliver interactive lessons through multiplayer Unity games. Teachers could assign quizzes embedded in games like obstacle courses or racing challenges. The Unity platform supported real-time multiplayer via Photon, allowing students to interact with peers and see their teacher in a live video feed inside the game. Teachers controlled the game environment directly from the web app, enabling full classroom management without entering the game.",
+    image: "/images/projects/edOS/student_home.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/edOS",
   },
   {
     id: 3,
-    title: "Socket.io Chat Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Platform One",
+    description: "Project metaverse description",
+    image: "/images/projects/platform-one/orb-onboarding.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/3",
   },
   {
     id: 4,
     title: "Rocket Lander Game",
     description: "Project 4 description",
-    image: "/images/projects/4.png",
+    image: "/images/projects/rocket-lander/rocket-lander.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/4",
   },
   {
     id: 5,
     title: "Educational Metaverse",
     description:
       "Metaverse for education built with Unity, Playfab, MySQL, and NodeJs.",
-    image: "/images/projects/5.png",
+    image: "/images/projects/metaverse/avatar_customization.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/5",
   },
   {
     id: 6,
-    title: "Project Manager Roadmaps in Clickup",
+    title: "Elevator Safety Code Search Engine",
     description: "Project 5 description",
-    image: "/images/projects/6.png",
+    image: "/images/projects/elevator-app/main.jpg",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/6",
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/7",
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/8",
   },
   {
     id: 9,
@@ -86,7 +86,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/9",
   },
   {
     id: 10,
@@ -95,7 +95,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/10",
   },
   {
     id: 11,
@@ -104,7 +104,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/11",
   },
   {
     id: 12,
@@ -113,7 +113,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/12",
   },
   {
     id: 13,
@@ -122,7 +122,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/13",
   },
   {
     id: 14,
@@ -131,7 +131,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/14",
   },
   {
     id: 15,
@@ -140,7 +140,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/15",
   },
   {
     id: 16,
@@ -149,7 +149,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/16",
   },
   {
     id: 17,
@@ -158,7 +158,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/projects/17",
   },
 ];
 
