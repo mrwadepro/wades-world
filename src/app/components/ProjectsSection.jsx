@@ -9,6 +9,8 @@ export const projectsData = [
     id: 1,
     title: "Stemuli 1.0",
     description: "Developed an online platform to help companies and organizations mentor students remotely, addressing the challenge of limited mentor availability due to full-time jobs. The platform allowed mentors to post videos and engage with students building workforce skills. It later evolved into a full learning management system (LMS) with progress tracking, attendance reporting, and a built-in virtual classroom for schools.",
+    role:['Project Manager', 'Frontend Developer', 'Backend Developer', 'UI/UX Designer', 'DevOps'],
+    technologies: ['ReactJS', 'MongoDB', 'NodeJS', 'ExpressJS', 'Socket.IO', 'Azure Cloud'],
     image: "/images/projects/stemuli_1.0/dashboard_volunteer.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -16,7 +18,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "EdOS ",
+    title: "EdOS",
     description:
       "Built a hybrid web and Unity-based LMS that lets teachers create and manage curriculum, import classes from Google Classroom, and deliver interactive lessons through multiplayer Unity games. Teachers could assign quizzes embedded in games like obstacle courses or racing challenges. The Unity platform supported real-time multiplayer via Photon, allowing students to interact with peers and see their teacher in a live video feed inside the game. Teachers controlled the game environment directly from the web app, enabling full classroom management without entering the game.",
     image: "/images/projects/edOS/student_home.png",
@@ -27,7 +29,9 @@ export const projectsData = [
   {
     id: 3,
     title: "Platform One",
-    description: "Project metaverse description",
+    description: `Platform One is an intelligent education platform designed to support student learning through ORB, a virtual education assistant. ORB personalizes support for each learner using a dynamic profile generated during onboarding, enabling tailored academic guidance and content delivery.`,
+    role:['Project Manager', 'Frontend Developer', 'Backend Developer', 'DevOps'],
+    technologies: ['ReactJS', 'Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL', 'OpenAI', 'Instructor', 'AWS', 'Railway'],
     image: "/images/projects/platform-one/orb-onboarding.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -182,26 +186,26 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
-        My Projects
-      </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        />
-      </div>
+      {/*<h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">*/}
+      {/*  My Projects*/}
+      {/*</h2>*/}
+      {/*<div className="text-white flex flex-row justify-center items-center gap-2 py-6">*/}
+      {/*  <ProjectTag*/}
+      {/*    onClick={handleTagChange}*/}
+      {/*    name="All"*/}
+      {/*    isSelected={tag === "All"}*/}
+      {/*  />*/}
+      {/*  <ProjectTag*/}
+      {/*    onClick={handleTagChange}*/}
+      {/*    name="Web"*/}
+      {/*    isSelected={tag === "Web"}*/}
+      {/*  />*/}
+      {/*  <ProjectTag*/}
+      {/*    onClick={handleTagChange}*/}
+      {/*    name="Mobile"*/}
+      {/*    isSelected={tag === "Mobile"}*/}
+      {/*  />*/}
+      {/*</div>*/}
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
@@ -218,6 +222,8 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              role={project.role}
+              technologies={project.technologies}
             />
           </motion.li>
         ))}
