@@ -95,7 +95,7 @@ const TAB_DATA = [
     id: "rewards",
     content: (
       <ul className="list-disc pl-2">
-        <li>United Nations AI for Good Summit's Innovation Factory</li>
+        <li>United Nations AI for Good Summit Innovation Factory</li>
         <li>Dallas ISD Industry Partner of the Year</li>
         <li>Most Transformational App for Kids by Forbes + Yass Prize</li>
       </ul>

@@ -1,6 +1,5 @@
 import React from "react";
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
@@ -38,9 +37,11 @@ const MediaDisplay = ({ mediaUrl, title }) => {
         style={{ background: `url(${mediaUrl})`, backgroundSize: "cover" }}
       >
         {/* Fallback img element for better accessibility */}
-        <img
+        <Image
           src={mediaUrl}
           alt={title}
+            width={800}
+            height={450}
           className="w-full h-full object-cover opacity-0"
           onLoad={(e) => e.target.style.opacity = 0}
         />
@@ -49,7 +50,7 @@ const MediaDisplay = ({ mediaUrl, title }) => {
   }
 };
 
-const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl, role, technologies }) => {
+const ProjectCard = ({ imgUrl, title, description,role, technologies }) => {
   return (
     <div>
       <MediaDisplay mediaUrl={imgUrl} title={title} />
