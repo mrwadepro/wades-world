@@ -21,12 +21,8 @@ const achievementsList = [
     value: "5000",
   },
   {
-    metric: "Awards",
-    value: "metaverse",
-  },
-  {
     metric: "Years",
-    value: "5",
+    value: "7",
   },
 ];
 

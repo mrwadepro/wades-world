@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
+  /*
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -38,7 +39,7 @@ const EmailSection = () => {
       setEmailSubmitted(true);
     }
   };
-
+  */
   return (
     <section
       id="contact"
@@ -56,15 +57,16 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/mrwadepro">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/wade-aston-b990b899/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
       </div>
       <div>
+        {/*
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
@@ -125,6 +127,13 @@ const EmailSection = () => {
             </button>
           </form>
         )}
+        */}
+        <h5 className="text-xl font-bold text-white my-2">
+          Email Me
+        </h5>
+        <a href="mailto:mrwadepro@gmail.com" className="text-lg text-primary-400">
+            mrwadepro@gmail.com
+        </a>
       </div>
     </section>
   );
