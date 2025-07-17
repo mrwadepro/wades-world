@@ -87,7 +87,7 @@ export const projectsData = [
     title: "Tobi Mask driven by Adafruit MONSTER M4SK",
     description: `This project was a cosplay electronics build where I modified a store-bought Naruto character mask by embedding an Adafruit Monster Mask — a microcontroller board with dual OLED displays designed for animating eyes. Using CircuitPython, I programmed a custom eye animation that included realistic movement and blinking by manipulating a flat image. The result was a dynamic, animated eye that brought the mask to life.`,
     technologies: ['Adafruit Monster Mask', 'CircuitPython', 'OLED Display', 'Eye Animation', 'Cosplay Electronics'],
-    image: "/images/projects/tobi_mask/tobi_mask.mp4",
+    image: "/images/projects/tobi_mask/tobi.mp4",
     tag: ["All","Personal"],
     gitUrl: "/",
     previewUrl: "/projects/17",
