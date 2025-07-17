@@ -12,7 +12,7 @@ const TAB_DATA = [
           <div>
             <span className="block font-semibold text-[#ADB7BE] mb-1">Client</span>
             <div className="flex flex-wrap gap-2">
-              {["React", "Vite", "Next.js","React Native","Cordova","Flutter", "axios"].map((tech, index) => (
+              {["React","Typescript","Vite", "Next.js","React Native","Cordova","Flutter", "axios"].map((tech, index) => (
                 <span
                   key={index}
                   className="inline-block bg-[#2A2A2A] text-[#ADB7BE] px-2 py-1 rounded-md text-xs"
@@ -38,7 +38,7 @@ const TAB_DATA = [
           <div>
             <span className="block font-semibold text-[#ADB7BE] mb-1">Backend</span>
             <div className="flex flex-wrap gap-2">
-              {["Python", "FastAPI", "Nest.js", "Node.js", "Express", "RabbitMQ", "BullMQ", "Redis", "Socket.io"].map((tech, index) => (
+              {["Python", "FastAPI", "Nest.js", "Typescript","Node.js", "Express", "RabbitMQ", "BullMQ", "Redis", "Socket.io"].map((tech, index) => (
                 <span
                   key={index}
                   className="inline-block bg-[#2A2A2A] text-[#ADB7BE] px-2 py-1 rounded-md text-xs"
