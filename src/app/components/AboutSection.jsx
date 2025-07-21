@@ -91,8 +91,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Rewards",
-    id: "rewards",
+    title: "Awards",
+    id: "awards",
     content: (
       <ul className="list-disc pl-2">
         <li>United Nations AI for Good Summit Innovation Factory</li>
@@ -138,11 +138,11 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("rewards")}
-              active={tab === "rewards"}
+              selectTab={() => handleTabChange("awards")}
+              active={tab === "awards"}
             >
               {" "}
-              Rewards{" "}
+              Awards{" "}
             </TabButton>
           </div>
           <div className="mt-8">
